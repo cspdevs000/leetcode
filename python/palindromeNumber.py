@@ -1,23 +1,26 @@
 class Solution:
-    def isPalindrome(self, x: int) -> bool:
-        if x < 0:
-            return False
+    # def isPalindrome(self, x: int) -> bool:
+    #     if x < 0:
+    #         return False
         
-        div = 1 
-        while x >= 10 * div:
-            div *= 10
+    #     div = 1 
+    #     while x >= 10 * div:
+    #         div *= 10
             
-        while x:
-            right = x % 10
-            left = x // div
+    #     while x:
+    #         right = x % 10
+    #         left = x // div
             
-            if left != right:
-                return False
+    #         if left != right:
+    #             return False
             
-            x = (x % div) // 10
-            div = div / 100
+    #         x = (x % div) // 10
+    #         div = div / 100
             
-        return True
+    #     return True
+
+    def isPalindrome(self, x):
+        return str(x) == str(x)[::-1]
 
     print(isPalindrome('x', 121))
     print(isPalindrome('x', 1221))
