@@ -1,0 +1,20 @@
+var twoSum = function(nums, target) {
+    const indices = {};
+    
+    nums.forEach((item, i) => {
+        indices[item] = i
+    });
+    
+    for (let i = 0; i < nums.length; i++) {
+        const complement = target -nums[i];
+        
+        if (indices[complement] !== undefined && indices[complement] !== i) {
+            return [i, indices[complement]]
+        }
+    }
+};
+
+console.log(twoSum([2,7,11,15], 9));
+console.log(twoSum([2,7,11,15], 18));
+console.log(twoSum([2,7,11,15], 26));
+console.log(twoSum([2,7,11,15], 999));
