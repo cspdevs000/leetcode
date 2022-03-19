@@ -1,3 +1,4 @@
+import math
 def reverse(self, x: int) -> int:
     
     MIN = -2147483648
@@ -20,5 +21,5 @@ def reverse(self, x: int) -> int:
 
 print(reverse(reverse, 123))
 print(reverse(reverse, 121))
-print(reverse(reverse, 120))
+print(reverse(reverse, 34124325))
 print(reverse(reverse, -123))
