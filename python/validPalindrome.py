@@ -1,5 +1,5 @@
 class Solution:
-    def isPalindrome(self, s: str) -> bool:
+    def isPalindrome(s: str) -> bool:
         string = str(s).lower()
         cleaned = ''.join(filter(str.isalnum, string))
         # print(cleaned)
@@ -8,4 +8,4 @@ class Solution:
         else:
             return False
 
-    print(isPalindrome(isPalindrome, "A man, a plan, a canal: Panama"))
+    print(isPalindrome("A man, a plan, a canal: Panama"))
