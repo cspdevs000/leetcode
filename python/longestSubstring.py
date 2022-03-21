@@ -1,6 +1,6 @@
 #Longest Substring Without Repeating Characters
 
-def lengthOfLongestSubstring(self, s: str) -> int:
+def lengthOfLongestSubstring(s: str) -> int:
     charSet = set()
     l = 0
     result = 0
@@ -13,7 +13,7 @@ def lengthOfLongestSubstring(self, s: str) -> int:
         result = max (result, r - l + 1)
     return result
 
-print(lengthOfLongestSubstring(lengthOfLongestSubstring, "abcabcbb"))
-print(lengthOfLongestSubstring(lengthOfLongestSubstring, "bbbbbb"))
-print(lengthOfLongestSubstring(lengthOfLongestSubstring, "pwwkew"))
-print(lengthOfLongestSubstring(lengthOfLongestSubstring, "lkadsfjljksdjflkasdjflkdasfjskljgjkaskjgjkksglkjfsakgjfslglasfgasflgkajsflgkjalfsjgjasfkfkk"))
+print(lengthOfLongestSubstring("abcabcbb"))
+print(lengthOfLongestSubstring("bbbbbb"))
+print(lengthOfLongestSubstring("pwwkew"))
+print(lengthOfLongestSubstring("lkadsfjljksdjflkasdjflkdasfjskljgjkaskjgjkksglkjfsakgjfslglasfgasflgkajsflgkjalfsjgjasfkfkk"))
