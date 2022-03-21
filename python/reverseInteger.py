@@ -1,5 +1,5 @@
 import math
-def reverse(self, x: int) -> int:
+def reverse(x: int) -> int:
     
     MIN = -2147483648
     MAX = 2147483647
@@ -19,7 +19,7 @@ def reverse(self, x: int) -> int:
     
     return result
 
-print(reverse(reverse, 123))
-print(reverse(reverse, 121))
-print(reverse(reverse, 34124325))
-print(reverse(reverse, -123))
+print(reverse(123))
+print(reverse(121))
+print(reverse(120))
+print(reverse(3891738))
