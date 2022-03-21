@@ -1,4 +1,4 @@
-def longestPalindrome(self, s: str) -> str:
+def longestPalindrome(s: str) -> str:
     result = ""
     resultLength = 0
     
@@ -21,5 +21,5 @@ def longestPalindrome(self, s: str) -> str:
             
     return result
 
-print(longestPalindrome(longestPalindrome, "babad"))
-print(longestPalindrome(longestPalindrome, "cbbd"))
+print(longestPalindrome("babad"))
+print(longestPalindrome("cbbd"))
