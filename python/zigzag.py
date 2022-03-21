@@ -1,4 +1,4 @@
-def convert(self, s: str, numRows: int) -> str:
+def convert(s: str, numRows: int) -> str:
     if numRows == 1: return s
     
     result = ""
@@ -12,6 +12,6 @@ def convert(self, s: str, numRows: int) -> str:
             
     return result
 
-print(convert(convert, "PAYPALISHIRING", 3))
-print(convert(convert, "PAYPALISHIRING", 4))
-print(convert(convert, "PAYPALISHIRING", 5))
+print(convert("PAYPALISHIRING", 3))
+print(convert("PAYPALISHIRING", 4))
+print(convert("PAYPALISHIRING", 5))
