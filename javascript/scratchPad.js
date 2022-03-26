@@ -18,7 +18,7 @@ function fibonacci(num) {
     }
     return result[num];
 }
-console.log(fibonacci(15));
+// console.log(fibonacci(15));
 
 
 function fibRecursive(num) {
@@ -27,5 +27,26 @@ function fibRecursive(num) {
     }
     return fibRecursive(num - 1) + fibRecursive(num - 2)
 }
-console.log(fibRecursive(15));
+// console.log(fibRecursive(15));
+
+
+
+function fizzBuzz(num) {
+    for (let i = 1; i <= num; i++) {
+        if (i % 3 === 0 && i % 5 === 0) {
+            console.log('FizzBuzz');
+        }
+        else if (i % 3 === 0) {
+            console.log('Fizz');
+        }
+        else if (i % 5 === 0) {
+            console.log('Buzz');
+        }
+        else {
+            console.log(i);
+        }
+    }
+}
+
+fizzBuzz(77);
 
