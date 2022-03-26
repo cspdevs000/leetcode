@@ -18,6 +18,14 @@ function fibonacci(num) {
     }
     return result[num];
 }
+console.log(fibonacci(15));
 
-console.log(fibonacci(20));
+
+function fibRecursive(num) {
+    if (num < 2) {
+        return num
+    }
+    return fibRecursive(num - 1) + fibRecursive(num - 2)
+}
+console.log(fibRecursive(15));
 
