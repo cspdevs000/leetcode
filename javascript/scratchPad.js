@@ -93,7 +93,7 @@ function kmToMiles(num) {
 // console.log(kmToMiles(5));
 // console.log(kmToMiles(169));
 
-let numsArr = [1, 7, 4, 9, 14, 65, 21]
+let numsArr = [1, 7, 4, 9, -3, 14, 65, 21];
 
 function reverseArray(arr) {
     return arr.reverse();
@@ -117,4 +117,19 @@ function arraySort(arr) {
 function arraySortDesc(arr) {
     return arr.sort((a,b) => b - a);
 }
-console.log(arraySortDesc(numsArr));
+// console.log(arraySortDesc(numsArr));
+
+function filterNegatives(arr) {
+    let result = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] >= 0) {
+            result.push(arr[i]);
+        }
+    }
+    return result;
+}
+// console.log(filterNegatives(numsArr));
+// console.log(arraySort(filterNegatives(numsArr)));
+
+
+let stringy = "It was a sunny day, and the children were at the park";
