@@ -77,6 +77,18 @@ function reverseInteger(num) {
 // console.log(reverseInteger(123));
 // console.log(reverseInteger(17756));
 
+function isDivisible(num, n) {
+    if (num % n === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+// console.log(isDivisible(100, 10));
+// console.log(isDivisible(99, 10));
+// console.log(isDivisible(100, 9));
+// console.log(isDivisible(99, 9));
+
 
 function printOneToTen() {
     for (i = 1; i <= 10; i++) {
@@ -133,3 +145,15 @@ function filterNegatives(arr) {
 
 
 let stringy = "It was a sunny day, and the children were at the park";
+
+function noSpace(str) {
+    return str.split(' ').join('');
+}
+// console.log(noSpace(stringy));
+
+//uses regex, g makes it search the whole string, i makes it case insensitive
+function amountOfVowels(str) {
+    let vowels = str.match(/[aeiou]/gi);
+    return vowels.length;
+}
+// console.log(amountOfVowels(stringy));
