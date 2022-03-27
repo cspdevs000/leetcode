@@ -89,6 +89,32 @@ function kmToMiles(num) {
     let number = (num / 1.609344);
     return Math.round(number * 1e2) / 1e2;
 }
-console.log(kmToMiles(1));
-console.log(kmToMiles(5));
-console.log(kmToMiles(169));
+// console.log(kmToMiles(1));
+// console.log(kmToMiles(5));
+// console.log(kmToMiles(169));
+
+let numsArr = [1, 7, 4, 9, 14, 65, 21]
+
+function reverseArray(arr) {
+    return arr.reverse();
+}
+// console.log(reverseArray(numsArr));
+
+function arraySum(arr) {
+    let result = 0;
+    for (let i = 0; i < arr.length; i++) {
+        result = result + arr[i];
+    }
+    return result;
+}
+// console.log(arraySum(numsArr));
+
+function arraySort(arr) {  
+    return arr.sort((a,b) => a - b);
+}
+// console.log(arraySort(numsArr));
+
+function arraySortDesc(arr) {
+    return arr.sort((a,b) => b - a);
+}
+console.log(arraySortDesc(numsArr));
