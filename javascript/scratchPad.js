@@ -54,7 +54,18 @@ function reverseString(str) {
     return str.split('').reverse().join('');
 }
 
+//reverse loop method vv
+
+function revString(str) {
+    let result = '';
+    for (let i = str.length - 1; i >= 0; i--) {
+        result = result + str[i];
+    }
+    return result
+}
+
 // console.log(reverseString('practicing javascript'))
+// console.log(revString('hello i am cameron'))
 
 
 function reverseInteger(num) {
@@ -63,6 +74,7 @@ function reverseInteger(num) {
     return result;
 }
 
-console.log(reverseInteger(12));
-console.log(reverseInteger(123));
-console.log(reverseInteger(17756));
+// console.log(reverseInteger(12));
+// console.log(reverseInteger(123));
+// console.log(reverseInteger(17756));
+
