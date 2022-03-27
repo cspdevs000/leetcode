@@ -30,7 +30,6 @@ function fibRecursive(num) {
 // console.log(fibRecursive(15));
 
 
-
 function fizzBuzz(num) {
     for (let i = 1; i <= num; i++) {
         if (i % 3 === 0 && i % 5 === 0) {
@@ -78,3 +77,18 @@ function reverseInteger(num) {
 // console.log(reverseInteger(123));
 // console.log(reverseInteger(17756));
 
+
+function printOneToTen() {
+    for (i = 1; i <= 10; i++) {
+        console.log(i);
+    }
+}
+// printOneToTen();
+
+function kmToMiles(num) {
+    let number = (num / 1.609344);
+    return Math.round(number * 1e2) / 1e2;
+}
+console.log(kmToMiles(1));
+console.log(kmToMiles(5));
+console.log(kmToMiles(169));
