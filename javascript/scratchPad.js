@@ -213,5 +213,28 @@ function formatStr(str) {
 function validAnagram(str1, str2) {
     return (formatStr(str1) === formatStr(str2));
 }
-console.log(validAnagram('elbow', 'below'));
-console.log(validAnagram('elbow', 'bone'));
+// console.log(validAnagram('elbow', 'below'));
+// console.log(validAnagram('elbow', 'bone'));
+// console.log(validAnagram('Dormitory', 'dirty room'));
+
+function sumAllPrimes(num) {
+    let total = 0;
+
+    function isPrime(i) {
+        for (let j = 2; j < i; j++) {
+            if (i % j === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+    
+    for (let i = 2; i <= num; i++) {
+        if (isPrime(i)) {
+            total += i;
+        }
+    }
+    return total;
+}
+
+console.log(sumAllPrimes(10));
