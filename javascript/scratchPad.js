@@ -143,6 +143,18 @@ function filterNegatives(arr) {
 // console.log(filterNegatives(numsArr));
 // console.log(arraySort(filterNegatives(numsArr)));
 
+//use map to perform an operation on every value in an array. this does create a new array
+function doubleValues(arr) {
+    return arr.map(x => x * 2)
+}
+console.log(doubleValues(numsArr));
+
+//use filter to return a new array with values from the original array that meet the specified criteria
+function greaterThanTen(arr) {
+    return arr.filter(x => x > 10);
+}
+console.log(greaterThanTen(numsArr));
+
 
 let stringy = "It was a sunny day, and the children were at the park";
 
