@@ -147,13 +147,13 @@ function filterNegatives(arr) {
 function doubleValues(arr) {
     return arr.map(x => x * 2)
 }
-console.log(doubleValues(numsArr));
+// console.log(doubleValues(numsArr));
 
 //use filter to return a new array with values from the original array that meet the specified criteria
 function greaterThanTen(arr) {
     return arr.filter(x => x > 10);
 }
-console.log(greaterThanTen(numsArr));
+// console.log(greaterThanTen(numsArr));
 
 
 let stringy = "It was a sunny day, and the children were at the park";
@@ -169,3 +169,24 @@ function amountOfVowels(str) {
     return vowels.length;
 }
 // console.log(amountOfVowels(stringy));
+
+//take sentence, split the words without punctuation with regex/match
+//sort the array by length
+//filter the array by the longest word and any that are the same length into new array
+//if the length of that array is 1, return the string, if it's more than 1, return array of strings
+function longestWord(str) {
+    const wordArr = str.toLowerCase().match(/[a-z0-9]+/g);
+    const sorted = wordArr.sort((a, b) => b.length - a.length);
+    const multipleArr = sorted.filter((word) => word.length === sorted[0].length);
+    if (multipleArr.length === 1) {
+        return multipleArr[0];
+    } else {
+        return multipleArr;
+    }
+}
+// console.log(longestWord("It was a sunny day and the children were at the park"));
+
+//split an array into smaller arrays with the target length
+function chunkArray(arr, target) {
+
+}
