@@ -188,5 +188,13 @@ function longestWord(str) {
 
 //split an array into smaller arrays with the target length
 function chunkArray(arr, target) {
-
+    const chunked = [];
+    let i = 0;
+    while(i < arr.length) {
+        chunked.push(arr.slice(i, i + target));
+        i += target;
+    }
+    return chunked;
 }
+console.log(chunkArray(numsArr, 3));
+
