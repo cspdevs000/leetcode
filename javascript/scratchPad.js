@@ -211,11 +211,7 @@ function formatStr(str) {
 }
 
 function validAnagram(str1, str2) {
-    if (formatStr(str1) === formatStr(str2)) {
-        return true
-    } else {
-        return false
-    }
+    return (formatStr(str1) === formatStr(str2));
 }
 console.log(validAnagram('elbow', 'below'));
 console.log(validAnagram('elbow', 'bone'));
