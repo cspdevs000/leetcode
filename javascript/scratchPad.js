@@ -106,6 +106,7 @@ function kmToMiles(num) {
 // console.log(kmToMiles(169));
 
 let numsArr = [1, 7, 4, 9, -3, 14, 65, 21];
+let secondArr = [3, 6, 11, 15];
 
 function reverseArray(arr) {
     return arr.reverse();
@@ -196,5 +197,25 @@ function chunkArray(arr, target) {
     }
     return chunked;
 }
-console.log(chunkArray(numsArr, 3));
+// console.log(chunkArray(numsArr, 3));
 
+//take array of arrays and combine them into one array
+function combineArrays(arr1, arr2) {
+    return arr1.concat(arr2);
+}
+// console.log(combineArrays(numsArr,secondArr));
+
+
+function formatStr(str) {
+    return str.replace(/[^\w]/g, '').toLowerCase().split('').sort().join('');
+}
+
+function validAnagram(str1, str2) {
+    if (formatStr(str1) === formatStr(str2)) {
+        return true
+    } else {
+        return false
+    }
+}
+console.log(validAnagram('elbow', 'below'));
+console.log(validAnagram('elbow', 'bone'));
