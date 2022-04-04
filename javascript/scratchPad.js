@@ -7,7 +7,6 @@ function validPalindrome(str) {
 // console.log(validPalindrome('james'));
 // console.log(validPalindrome('ikkikki'));
 // console.log(validPalindrome('lol'));
-// console.log(validPalindrome('reeeeee'));
 
 function fibonacci(num) {
     const result = [0, 1];
