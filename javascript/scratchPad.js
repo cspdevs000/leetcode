@@ -236,4 +236,8 @@ function sumAllPrimes(num) {
     return total;
 }
 
-console.log(sumAllPrimes(10));
+// console.log(sumAllPrimes(10));
+
+
+let productBlock = document.querySelectorAll("[class*=product-block]");
+console.log('HI', productBlock);
