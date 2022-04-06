@@ -239,13 +239,15 @@ function sumAllPrimes(num) {
 // console.log(sumAllPrimes(10));
 
 
-const productBlock = document.querySelectorAll("[class*=product-block]");
+// const productBlock = document.querySelectorAll("[class*=product-block]");
 // console.log('HI', productBlock);
 
-const mobile = window.matchMedia('screen and (min-width: 600px)');
-const navElement = document.querySelector("[href*=arts-theater][class=links__list__item]");
+// const mobile = window.matchMedia('screen and (min-width: 600px)');
+// const navElement = document.querySelector("[href*=arts-theater][class=links__list__item]");
 
-if (mobile.matches) {
-    console.log(navElement)
-}
+// if (mobile.matches) {
+//     console.log(navElement)
+// }
 
+const dataProduct = document.querySelectorAll("[data-product-line=inline]");
+console.log(dataProduct);
