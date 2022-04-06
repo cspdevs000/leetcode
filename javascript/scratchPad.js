@@ -261,3 +261,17 @@ function sumAllPrimes(num) {
 // const title = document.querySelector("title");
 // let cleanTitle = title.innerHTML.split(" |")[0];
 // console.log(cleanTitle);
+
+// const changedText = document.querySelector("[class=product-name]").innerHTML.replace("Cars","Trucks");
+// console.log(changedText)
+
+
+// ^(?!.*product).*categories.*$
+
+const buttons = document.querySelectorAll("[class=box-selector]");
+
+for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("click", function(event) {
+        console.log(event.target.innerHTML);
+    });
+}
