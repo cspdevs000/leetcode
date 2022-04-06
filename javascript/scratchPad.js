@@ -255,5 +255,9 @@ function sumAllPrimes(num) {
 // const quantityError = document.getElementById('productError');
 // console.log('error', quantityError);
 
-const isActive = document.querySelector("[class*=rc-payment-selection-row]");
-console.log("is", isActive);
+// const isActive = document.querySelector("[class*=rc-payment-selection-row]");
+// console.log("is", isActive);
+
+// const title = document.querySelector("title");
+// let cleanTitle = title.innerHTML.split(" |")[0];
+// console.log(cleanTitle);
