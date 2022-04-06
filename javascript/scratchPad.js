@@ -265,8 +265,10 @@ function sumAllPrimes(num) {
 // const changedText = document.querySelector("[class=product-name]").innerHTML.replace("Cars","Trucks");
 // console.log(changedText)
 
-
-// ^(?!.*product).*categories.*$
+const string = "/categories/";
+const regex = /^(?!.*product).*categories.*$/;
+const found = string.match(regex);
+console.log(found);
 
 // const buttons = document.querySelectorAll("[class=box-selector]");
 
@@ -276,19 +278,19 @@ function sumAllPrimes(num) {
 //     });
 // }
 
-let paths = [];
+// let paths = [];
 
-function addPath() {
-    const newPath = sessionStorage.qm_last_page;
-    for (let i = 0; i < paths.length; i++) {
-        if (newPath !== paths[i]) {
-            paths.push(newPath);
-        }
-    }
-    console.log(paths);
-}
+// function addPath() {
+//     const newPath = sessionStorage.qm_last_page;
+//     for (let i = 0; i < paths.length; i++) {
+//         if (newPath !== paths[i]) {
+//             paths.push(newPath);
+//         }
+//     }
+//     console.log(paths);
+// }
 
-window.addEventListener('DOMContentLoaded', (event) => {
-    addPath();
-});
+// window.addEventListener('DOMContentLoaded', (event) => {
+//     addPath();
+// });
 
