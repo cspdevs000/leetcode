@@ -249,5 +249,8 @@ function sumAllPrimes(num) {
 //     console.log(navElement)
 // }
 
-const dataProduct = document.querySelectorAll("[data-product-line=inline]");
-console.log(dataProduct);
+// const dataProduct = document.querySelectorAll("[data-product-line=inline]");
+// console.log(dataProduct);
+
+// const quantityError = document.getElementById('productError');
+// console.log('error', quantityError);
