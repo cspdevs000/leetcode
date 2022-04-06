@@ -239,5 +239,13 @@ function sumAllPrimes(num) {
 // console.log(sumAllPrimes(10));
 
 
-let productBlock = document.querySelectorAll("[class*=product-block]");
-console.log('HI', productBlock);
+const productBlock = document.querySelectorAll("[class*=product-block]");
+// console.log('HI', productBlock);
+
+const mobile = window.matchMedia('screen and (min-width: 600px)');
+const navElement = document.querySelector("[href*=arts-theater][class=links__list__item]");
+
+if (mobile.matches) {
+    console.log(navElement)
+}
+
