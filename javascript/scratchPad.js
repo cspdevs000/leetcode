@@ -268,10 +268,27 @@ function sumAllPrimes(num) {
 
 // ^(?!.*product).*categories.*$
 
-const buttons = document.querySelectorAll("[class=box-selector]");
+// const buttons = document.querySelectorAll("[class=box-selector]");
 
-for (let i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener("click", function(event) {
-        console.log(event.target.innerHTML);
-    });
+// for (let i = 0; i < buttons.length; i++) {
+//     buttons[i].addEventListener("click", function(event) {
+//         console.log(event.target.innerHTML);
+//     });
+// }
+
+let paths = [];
+
+function addPath() {
+    const newPath = sessionStorage.qm_last_page;
+    for (let i = 0; i < paths.length; i++) {
+        if (newPath !== paths[i]) {
+            paths.push(newPath);
+        }
+    }
+    console.log(paths);
 }
+
+window.addEventListener('DOMContentLoaded', (event) => {
+    addPath();
+});
+
