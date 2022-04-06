@@ -254,3 +254,6 @@ function sumAllPrimes(num) {
 
 // const quantityError = document.getElementById('productError');
 // console.log('error', quantityError);
+
+const isActive = document.querySelector("[class*=rc-payment-selection-row]");
+console.log("is", isActive);
