@@ -1,3 +1,5 @@
+const { resolve } = require("path");
+
 function validPalindrome(str) {
     str = str.toLowerCase();
     return (str === str.split('').reverse().join(''));
@@ -105,6 +107,7 @@ function kmToMiles(num) {
 // console.log(kmToMiles(169));
 
 let numsArr = [1, 7, 4, 9, -3, 14, 65, 21];
+// console.log('here', numsArr.sort());
 let secondArr = [3, 6, 11, 15];
 
 function reverseArray(arr) {
@@ -268,7 +271,7 @@ function sumAllPrimes(num) {
 const string = "/categories/";
 const regex = /^(?!.*product).*categories.*$/;
 const found = string.match(regex);
-console.log(found);
+// console.log(found);
 
 // const buttons = document.querySelectorAll("[class=box-selector]");
 
@@ -293,4 +296,3 @@ console.log(found);
 // window.addEventListener('DOMContentLoaded', (event) => {
 //     addPath();
 // });
-
