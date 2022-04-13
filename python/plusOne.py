@@ -16,3 +16,5 @@ def plusOne(digits):
     return digits[::-1]
 
 print(plusOne([1,2,3]))
+print(plusOne([4,3,2,1]))
+print(plusOne([9]))
