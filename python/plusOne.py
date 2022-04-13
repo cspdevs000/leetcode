@@ -14,3 +14,5 @@ def plusOne(digits):
             carry = 0
         i += 1
     return digits[::-1]
+
+print(plusOne([1,2,3]))
