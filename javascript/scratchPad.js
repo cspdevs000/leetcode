@@ -281,6 +281,8 @@ const found = string.match(regex);
 //     });
 // }
 
+
+
 // let paths = [];
 
 // function addPath() {
@@ -296,3 +298,32 @@ const found = string.match(regex);
 // window.addEventListener('DOMContentLoaded', (event) => {
 //     addPath();
 // });
+
+//just now realizing this wouldn't work^^
+//the newPath will be pushed into the array if it doesn't match the first index of the array
+
+// 
+let paths = [];
+
+function addPath() {
+    const newPath = sessionStorage.qm_last_page;
+    let unique = false;
+    for (let i = 0; i < paths.length; i++) {
+        if (newPath !== paths[i]) {
+            unique = true;
+        } else {
+            unique = false;
+            break;
+        }
+    }
+    if (unique == true) {
+        paths.push(newPath);
+    }
+    console.log(paths);
+}
+
+console.log(addPath());
+
+window.addEventListener('DOMContentLoaded', (event) => {
+    addPath();
+});
