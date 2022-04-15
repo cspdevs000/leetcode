@@ -302,7 +302,12 @@ const found = string.match(regex);
 //just now realizing this wouldn't work^^
 //the newPath will be pushed into the array if it doesn't match the first index of the array
 
-// 
+// fixed it by intializing a boolean called unique to false
+// the boolean is set to true if the first index doesn't match the newPath
+// boolean stays true as it iterates through until it reaches a path that exists
+// in which case, it sets back to false and breaks out of the loop, not adding the newPath
+// if it gets to the end of the loop and unique is still true, THEN it adds the newPath to the array
+
 let paths = [];
 
 function addPath() {
@@ -327,3 +332,7 @@ console.log(addPath());
 window.addEventListener('DOMContentLoaded', (event) => {
     addPath();
 });
+
+
+
+
