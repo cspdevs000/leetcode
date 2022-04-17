@@ -1,13 +1,12 @@
-class Solution:
-    def isPalindrome(x):
-        return str(x) == str(x)[::-1]
+def isPalindrome(x):
+    return str(x) == str(x)[::-1]
 
-    print(isPalindrome(121))
-    print(isPalindrome(1221))
-    print(isPalindrome(12221))
-    print(isPalindrome(12111))
-    print(isPalindrome(121131))
-    print(isPalindrome(123131))
+print(isPalindrome(121))
+print(isPalindrome(1221))
+print(isPalindrome(12221))
+print(isPalindrome(12111))
+print(isPalindrome(121131))
+print(isPalindrome(123131))
 
 #first solution
     # def isPalindrome(self, x: int) -> bool:
