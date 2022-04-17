@@ -9,7 +9,7 @@ print(isPalindrome(121131))
 print(isPalindrome(123131))
 
 #first solution
-    # def isPalindrome(self, x: int) -> bool:
+    # def isPalindrome(x) -> bool:
     #     if x < 0:
     #         return False
         
