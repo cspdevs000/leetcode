@@ -14,12 +14,14 @@ function fibonacci(num) {
     const result = [0, 1];
     for (let i = 2; i <= num; i++) {
         const num1 = result[i - 1];
+        // console.log('one', num1);
         const num2 = result[i - 2];
+        // console.log('two', num2);
         result.push(num1 + num2);
     }
     return result[num];
 }
-// console.log(fibonacci(15));
+console.log(fibonacci(15));
 
 
 function fibRecursive(num) {
@@ -308,30 +310,30 @@ const found = string.match(regex);
 // in which case, it sets back to false and breaks out of the loop, not adding the newPath
 // if it gets to the end of the loop and unique is still true, THEN it adds the newPath to the array
 
-let paths = [];
+// let paths = [];
 
-function addPath() {
-    const newPath = sessionStorage.qm_last_page;
-    let unique = false;
-    for (let i = 0; i < paths.length; i++) {
-        if (newPath !== paths[i]) {
-            unique = true;
-        } else {
-            unique = false;
-            break;
-        }
-    }
-    if (unique == true) {
-        paths.push(newPath);
-    }
-    console.log(paths);
-}
+// function addPath() {
+//     const newPath = sessionStorage.qm_last_page;
+//     let unique = false;
+//     for (let i = 0; i < paths.length; i++) {
+//         if (newPath !== paths[i]) {
+//             unique = true;
+//         } else {
+//             unique = false;
+//             break;
+//         }
+//     }
+//     if (unique == true) {
+//         paths.push(newPath);
+//     }
+//     console.log(paths);
+// }
 
-console.log(addPath());
+// console.log(addPath());
 
-window.addEventListener('DOMContentLoaded', (event) => {
-    addPath();
-});
+// window.addEventListener('DOMContentLoaded', (event) => {
+//     addPath();
+// });
 
 
 
