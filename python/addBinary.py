@@ -18,3 +18,4 @@ def addBinary(a, b):
     return result
 
 print(addBinary("11", "1"))
+print(addBinary("1010", "1011"))
