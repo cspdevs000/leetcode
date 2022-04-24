@@ -7,3 +7,6 @@ def climbStairs(n):
         n2 = temp
         
     return n1
+
+print(climbStairs(2))
+print(climbStairs(7))
